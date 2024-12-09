@@ -21,16 +21,16 @@ jobs:
       run: make test
     - name: day2
       working-directory: ./day2
-      run: make
+      run: make test
     - name: day3
       working-directory: ./day3
-      run: make
+      run: make test
     - name: day4
       working-directory: ./day4
-      run: make
+      run: make test
     - name: day5
       working-directory: ./day5
-      run: make
+      run: make test
     - name: day8
       working-directory: ./day8
-      run: make
+      run: make test

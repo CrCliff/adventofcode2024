@@ -10,11 +10,11 @@ const bool _DEBUG = (DEBUG_ENV && DEBUG_ENV[0] == '1');
         x;       \
     }
 
-// constexpr int MX = 12;
-// constexpr int MY = 12;
+constexpr int MX = 12;
+constexpr int MY = 12;
 
-constexpr int MX = 50;
-constexpr int MY = 50;
+// constexpr int MX = 50;
+// constexpr int MY = 50;
 
 int main()
 {
