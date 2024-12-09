@@ -11,8 +11,26 @@ jobs:
 
     runs-on: ubuntu-latest
 
+    container:
+      image: gcc:11.4.0
+
     steps:
     - uses: actions/checkout@v4
+    - name: day1
+      working-directory: ./day1
+      run: make
+    - name: day2
+      working-directory: ./day2
+      run: make
+    - name: day3
+      working-directory: ./day3
+      run: make
+    - name: day4
+      working-directory: ./day4
+      run: make
+    - name: day5
+      working-directory: ./day5
+      run: make
     - name: day8
       working-directory: ./day8
       run: make
