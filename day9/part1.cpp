@@ -26,20 +26,14 @@ int main()
 
     std::vector<int> vsparse;
     int idx = 0;
-    for (int i = 0; i < vdense.size(); i++)
+    const int N = vdense.size();
+    for (int i = 1; i < N + 1; i += 2)
     {
-        int c = vdense.at(i);
-        if ((i % 2) == 0)
-        {
-            for (int j = 0; j < c; j++)
-                vsparse.push_back(idx);
-            idx++;
-        }
-        else
-        {
-            for (int j = 0; j < c; j++)
-                vsparse.push_back(-1);
-        }
+        for (int j = 0; j < vdense[i-1]; j++)
+            vsparse.push_back(idx);
+        for (int j = 0; j < ((i < N) ? vdense[i] : 0); j++)
+            vsparse.push_back(-1);
+        idx++;
     }
 
     DEBUG(
