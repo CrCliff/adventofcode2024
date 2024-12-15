@@ -34,3 +34,9 @@ jobs:
     - name: day8
       working-directory: ./day8
       run: make test
+    - name: day9
+      working-directory: ./day9
+      run: make test
+    - name: day10
+      working-directory: ./day10
+      run: make test
