@@ -43,3 +43,6 @@ jobs:
     - name: day14
       working-directory: ./day14
       run: make test
+    - name: day15
+      working-directory: ./day15
+      run: make test
