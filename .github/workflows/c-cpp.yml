@@ -46,3 +46,6 @@ jobs:
     - name: day15
       working-directory: ./day15
       run: make test
+    - name: day18
+      working-directory: ./day18
+      run: make test
