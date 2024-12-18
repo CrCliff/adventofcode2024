@@ -1,6 +1,6 @@
 
 CC=g++
-CFLAGS=-std=c++20 -g3
+CFLAGS=-std=c++20 -g3 -pthread
 
 .PHONY: clean test
 
